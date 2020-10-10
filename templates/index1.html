@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>Services</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style1.css')}}">
+</head>
+
+<body>
+     <header>
+        <div class="container-fluid">
+            <div class="nav-btn navbar navbar-expand-lg navbar-light bg-white">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="nav-links">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-link" style="--i: .6s">
+                                <a style="font-size:150%;line-height: 1.05;text-align:center;
+                                            font-weight:600; padding-left:1%;padding-right:0%;overflow-y: hidden;"
+                                    href="index1.html"><a href="{{url_for('static',filename='index1.html')}}">Up to the minute?</a>
+                            </li>
+                            <li class="nav-link" style="--i: .6s">
+                                <a href="index.html" style="color:  #45a049;"><a href="{{url_for('static',filename='index1.html')}}">Home</a>
+                            </li>
+                            <li class="nav-link" style="--i: .6s">
+                                <a href="audioLectures.html" style="color:  #45a049;"><a href="{{url_for('static',filename='audioLectures.html')}}">Audio Lectures</a>
+                            </li>
+							<li class="nav-link" style="--i: .6s">
+                                <a href="summary.html" style="color:  #45a049;"><a href="{{url_for('static',filename='summary.html')}}">Summary</a>
+                            </li>
+                            
+                            <li class="nav-link" style="--i: .6s">
+                                <a href="liveLectures.html"><a href="{{url_for('static',filename='liveLectures.html')}}">Subtitled Live Lectures</a>
+                            </li>
+							<li class="nav-link" style="--i: .6s">
+                                <a href="text2speech.html" style="color:  #45a049;"><a href="{{url_for('static',filename='text2speech.html')}}">Text2Speech</a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="contactUsHeading">
+        <h1 class="Heading">Our Services</h1>
+    </div>
+    <div>
+        <div class="container-fluid">
+            <h1 class="Heading2">How can we assist you?</h1><br>
+        </div>
+    </div>
+    <div class="container-fluid padding2">
+        <div class="row">
+            <div class="col-sm-4" style="overflow-x: hidden;overflow-y: hidden;">
+                <div class="jumbotron jumbotronPadding1">
+                    <a target="_blank" href="blind.jpg">
+                        <img src="{{url_for('static',filename='3.png')}}" alt=" " width="100%" height="50%" frameborder="0" style="border:0;"
+                            allowfullscreen="" aria-hidden="false" tabindex="0"></a>
+                    <h1 class="footerHeading">Audio Books</h1>
+					<p class="w3-large"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p><br>
+                    <p><b>Target Audience:</b> Visually Impaired Users</p><br>
+					<p>Want to listen to a book that you wanted to read since you were small? Just upload the pdf and enjoy the pleasures of reading.</p>
+					<p>We plan on coming up with a recommender system to help you get started soon!</p>
+                </div>
+            </div>
+            <div class="col-sm-4" style="overflow-x: hidden;overflow-y: hidden;">
+                <div class="jumbotron jumbotronPadding1">
+                    <a target="_blank" href="blind.jpg">
+                        <img src="{{url_for('static',filename='5.png')}}" alt=" " width="100%" height="50%" frameborder="0" style="border:0;"
+                            allowfullscreen="" aria-hidden="false" tabindex="0"></a>
+                    <h1 class="footerHeading">Summary</h1>
+					<p class="w3-large"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p><br>
+                    <p><b>Target Audience:</b> Visually Impaired Users</p><br>
+					<p>Want to decide which book to read? We have used a scraper to provide you with summaries of a few books. Listen to them and go read the book of your choice.</p>
+					<p>New books will be added soon!</p>
+                </div>
+            </div>
+           <div class="col-sm-4" style="overflow-x: hidden;overflow-y: hidden;">
+                <div class="jumbotron jumbotronPadding1">
+                    <a target="_blank" href="blind.jpg">
+                        <img src="{{url_for('static',filename='2.png')}}" alt=" " width="100%" height="50%" frameborder="0" style="border:0;"
+                            allowfullscreen="" aria-hidden="false" tabindex="0"></a>
+                    <h1 class="footerHeading">Social Distancing Tracker</h1>
+					<p class="w3-large"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p><br>
+                    <p><b>Target Audience:</b> Visually Impaired Users</p><br>
+					<p>Want to lead a normal life in this "new normal"? We have come up with a social distancing tracker which gives a warning alert when distance is less than minimum required.</p>
+					<p>Object detection and alert to be added soon!</p>
+                </div>
+            </div>
+			<div class="col-sm-4" style="overflow-x: hidden;overflow-y: hidden;">
+                <div class="jumbotron jumbotronPadding1">
+                    <a target="_blank" href="blind.jpg">
+                        <img src="{{url_for('static',filename='6.png')}}" alt=" " width="100%" height="50%" frameborder="0" style="border:0;"
+                            allowfullscreen="" aria-hidden="false" tabindex="0"></a>
+                    <h1 class="footerHeading">Subtitled Live Lectures</h1>
+					<p class="w3-large"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p><br>
+                    <p><b>Target Audience:</b> Hearing Impaired Users</p><br>
+					<p>Find it hard to communicate and read other's lips behind their masks? Just click on start recording button and get text conversions of whatever is being spoken to you.</p>
+                </div>
+            </div>
+			<div class="col-sm-4" style="overflow-x: hidden;overflow-y: hidden;">
+                <div class="jumbotron jumbotronPadding1">
+                    <a target="_blank" href="blind.jpg">
+                        <img src="{{url_for('static',filename='7.png')}}" alt=" " width="100%" height="50%" frameborder="0" style="border:0;"
+                            allowfullscreen="" aria-hidden="false" tabindex="0"></a>
+                    <h1 class="footerHeading">Text2Speech</h1>
+					<p class="w3-large"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p><br>
+                    <p><b>Target Audience:</b> Mute Users</p><br>
+					<p>Want to communicate to others just like everyone else does? Type in your thoughts and we will say it for you. Male and Female Versions Available</p>
+					<p>Different Language Translations to be added soon!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid padding5">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p style="text-align: center;">Lockdown due to COVID-19 made all professions work in an unfamiliar environment. This is made as
+                        an attempt to help and support a community  of the disabled to ease their tasks for remote
+                        operations </p>
+                </div>
+                <div class="col-sm-4" style="text-align: center;">
+                    <h1 class="Heading5">Quick Links</h1>
+                    <ul style="list-style: none;">
+                        <li>
+                            <a href="index1.html"><a href="{{url_for('static',filename='index1.html')}}">Home</a>
+                        </li>
+                        <li>
+                            <a href="audioLectures.html"><a href="{{url_for('static',filename='audioLectures.html')}}">Audio Lectures</a>
+                        </li>
+                        
+                        <li>
+                            <a href="liveLectures.html"><a href="{{url_for('static',filename='liveLectures.html')}}">Subtitled Live Lectures</a>
+                        </li>
+						<li>
+                                <a href="summary.html"><a href="{{url_for('static',filename='summary.html')}}">Summary</a>
+                        </li>
+						<li>
+                                <a href="text2speech.html"><a href="{{url_for('static',filename='text2speech.html')}}">Text2Speech</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <div class="jumbotron bg">
+                        <p class="colourWhite">Subscribe to our newsletter to receive exclusive updates.</p>
+                        <div>
+                            <input type="text" class="form-control" id="EnterEmail" placeholder="Enter Email">
+                        </div>
+
+                        <button type="submit" class="btn btn-lg" id="JoinUs" style="width:50%;margin-top:6%;"><a
+                                style="color:white; text-decoration:none;" href="mailto: abc@example.com">Join
+                                Us</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Services</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style1.css')}}">
+</head>
+
+<body>
+     <header>
+        <div class="container-fluid">
+            <div class="nav-btn navbar navbar-expand-lg navbar-light bg-white">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="nav-links">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-link" style="--i: .6s">
+                                <a style="font-size:150%;line-height: 1.05;text-align:center;
+                                            font-weight:600; padding-left:1%;padding-right:0%;overflow-y: hidden;"
+                                    href="index1.html"><a href="{{url_for('static',filename='index1.html')}}">Up to the minute?</a>
+                            </li>
+                            <li class="nav-link" style="--i: .6s">
+                                <a href="index1.html" style="color:  #45a049;"><a href="{{url_for('static',filename='index1.html')}}">Home</a>
+                            </li>
+                            <li class="nav-link" style="--i: .6s">
+                                <a href="audioLectures.html" style="color:  #45a049;"><a href="{{url_for('static',filename='audioLectures.html')}}">Audio Lectures</a>
+                            </li>
+							<li class="nav-link" style="--i: .6s">
+                                <a href="summary.html" style="color:  #45a049;"><a href="{{url_for('static',filename='summary.html')}}">Summary</a>
+                            </li>
+                         
+                            <li class="nav-link" style="--i: .6s">
+                                <a href="liveLectures.html"><a href="{{url_for('static',filename='liveLectures.html')}}">Subtitled Live Lectures</a>
+                            </li>
+							<li class="nav-link" style="--i: .6s">
+                                <a href="text2speech.html" style="color:  #45a049;"><a href="{{url_for('static',filename='text2speech.html')}}">Text2Speech</a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+	<body>
+	<script language="Javascript">
+function download(filename, text) {
+  var pom = document.createElement('a');
+  pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 
+
+encodeURIComponent(text));
+  pom.setAttribute('download', filename);
+
+  pom.style.display = 'none';
+  document.body.appendChild(pom);
+
+  pom.click();
+
+  document.body.removeChild(pom);
+}
+
+function addTextTXT()
+{
+    document.addtext.name.value = document.addtext.name.value + ".txt"
+}
+</script>
+	<center><h3>Text2Speech</h3>
+	<br>
+	<p>Click on the say it button to let someone hear what you want to say!</p><br>
+     <form class="input" id="voice-form" method="post">
+                <div class="field">
+                    <label for="speech">Type Something</label>
+					<br>
+                    <input type="text" name="speech" id="speech" required />
+                </div>
+                <div class="field">
+				<br>
+                    <label for="voices">Choose a Voice Assistant</label>
+					<br>
+                      <select name="voices" id="voices">
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                      </select>
+                </div>
+				<br>
+              <button>
+                    Say it!
+              </button>
+          </form>
+		  <br>
+		  <br>
+    <footer>
+        <div class="container-fluid padding5">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p style="text-align: center;">Lockdown due to COVID-19 made all professions work in an unfamiliar environment. This is made as
+                        an attempt to help and support a community  of the disabled to ease their tasks for remote
+                        operations </p>
+                </div>
+                <div class="col-sm-4" style="text-align: center;">
+                    <h1 class="Heading5">Quick Links</h1>
+                    <ul style="list-style: none;">
+                        <li>
+                            <a href="index1.html"><a href="{{url_for('static',filename='index1.html')}}">Home</a>
+                        </li>
+                        <li>
+                            <a href="audioLectures.html"><a href="{{url_for('static',filename='audioLectures.html')}}">Audio Lectures</a>
+                        </li>
+                        
+                        <li>
+                            <a href="liveLectures.html"><a href="{{url_for('static',filename='liveLectures.html')}}">Subtitled Live Lectures</a>
+                        </li>
+						<li>
+                                <a href="summary.html"><a href="{{url_for('static',filename='summary.html')}}">Summary</a>
+                        </li>
+						<li>
+                                <a href="text2speech.html"><a href="{{url_for('static',filename='text2speech.html')}}">Text2Speech</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <div class="jumbotron bg">
+                        <p class="colourWhite">Subscribe to our newsletter to receive exclusive updates.</p>
+                        <div>
+                            <input type="text" class="form-control" id="EnterEmail" placeholder="Enter Email">
+                        </div>
+
+                        <button type="submit" class="btn btn-lg" id="JoinUs" style="width:50%;margin-top:6%;"><a
+                                style="color:white; text-decoration:none;" href="mailto: abc@example.com">Join
+                                Us</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
