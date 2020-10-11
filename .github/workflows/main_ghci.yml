@@ -31,4 +31,4 @@ jobs:
       with:
         app-name: 'ghci'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_91ef19c509a94e8fbac1ebe7a250ac01 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_0a3445b81e4e40a8badb9925976aae1a }}
