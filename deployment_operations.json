@@ -1,0 +1,19 @@
+[
+  {
+    "id": "/subscriptions/0d2177f5-295a-4371-90a6-96933deb5266/resourceGroups/opencv/providers/Microsoft.Resources/deployments/Microsoft.Web-WebApp-Portal-7ece6b52-89e1/operations/745E04C5996F70FB",
+    "operationId": "745E04C5996F70FB",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2020-10-11T08:05:29.8686888Z",
+      "duration": "PT46.0545128S",
+      "trackingId": "a355a9bf-3b87-40ff-a3fb-ff5b6744ba60",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/0d2177f5-295a-4371-90a6-96933deb5266/resourceGroups/opencv/providers/Microsoft.Web/serverfarms/ghci",
+        "resourceType": "Microsoft.Web/serverfarms",
+        "resourceName": "ghci"
+      }
+    }
+  }
+]

@@ -1,0 +1,112 @@
+{
+  "id": "/subscriptions/0d2177f5-295a-4371-90a6-96933deb5266/resourceGroups/opencv/providers/Microsoft.Resources/deployments/Microsoft.Web-WebApp-Portal-7ece6b52-89e1",
+  "name": "Microsoft.Web-WebApp-Portal-7ece6b52-89e1",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/0d2177f5-295a-4371-90a6-96933deb5266/resourcegroups/opencv/providers/Microsoft.Web/sites/gh11",
+    "marketplaceItemId": "Microsoft.WebSite"
+  },
+  "properties": {
+    "templateHash": "4883191733679320624",
+    "parameters": {
+      "subscriptionId": {
+        "type": "String",
+        "value": "0d2177f5-295a-4371-90a6-96933deb5266"
+      },
+      "name": {
+        "type": "String",
+        "value": "gh11"
+      },
+      "location": {
+        "type": "String",
+        "value": "East US"
+      },
+      "hostingPlanName": {
+        "type": "String",
+        "value": "ghci"
+      },
+      "serverFarmResourceGroup": {
+        "type": "String",
+        "value": "opencv"
+      },
+      "alwaysOn": {
+        "type": "Bool",
+        "value": false
+      },
+      "sku": {
+        "type": "String",
+        "value": "Free"
+      },
+      "skuCode": {
+        "type": "String",
+        "value": "F1"
+      },
+      "workerSize": {
+        "type": "String",
+        "value": "0"
+      },
+      "workerSizeId": {
+        "type": "String",
+        "value": "0"
+      },
+      "numberOfWorkers": {
+        "type": "String",
+        "value": "1"
+      },
+      "linuxFxVersion": {
+        "type": "String",
+        "value": "PYTHON|3.8"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Succeeded",
+    "timestamp": "2020-10-11T08:05:34.3336509Z",
+    "duration": "PT55.3070878S",
+    "correlationId": "b374ad02-6fc2-461c-8aa2-3de66f4e8051",
+    "providers": [
+      {
+        "namespace": "Microsoft.Web",
+        "resourceTypes": [
+          {
+            "resourceType": "sites",
+            "locations": [
+              "eastus"
+            ]
+          },
+          {
+            "resourceType": "serverfarms",
+            "locations": [
+              "eastus"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/0d2177f5-295a-4371-90a6-96933deb5266/resourceGroups/opencv/providers/Microsoft.Web/serverfarms/ghci",
+            "resourceType": "Microsoft.Web/serverfarms",
+            "resourceName": "ghci"
+          }
+        ],
+        "id": "/subscriptions/0d2177f5-295a-4371-90a6-96933deb5266/resourceGroups/opencv/providers/Microsoft.Web/sites/gh11",
+        "resourceType": "Microsoft.Web/sites",
+        "resourceName": "gh11"
+      }
+    ],
+    "outputResources": [
+      {
+        "id": "/subscriptions/0d2177f5-295a-4371-90a6-96933deb5266/resourceGroups/opencv/providers/Microsoft.Web/serverfarms/ghci"
+      },
+      {
+        "id": "/subscriptions/0d2177f5-295a-4371-90a6-96933deb5266/resourceGroups/opencv/providers/Microsoft.Web/sites/gh11"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}
